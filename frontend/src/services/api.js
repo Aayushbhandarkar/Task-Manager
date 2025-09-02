@@ -4,7 +4,7 @@ const API_BASE_URL = 'https://task-manager-backend-5uwb.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
-  withCredentials: false, 
+  withCredentials: true, 
 });
 
 // Add token to requests
