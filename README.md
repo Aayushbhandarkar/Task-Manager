@@ -27,8 +27,8 @@ Watch a short 2-minute demo of the application:
 
 🖼 Screenshots
 
+<img width="1916" height="1045" alt="Screenshot 2025-09-02 073435" src="https://github.com/user-attachments/assets/01968887-901b-414e-9275-4c4b9df0c646" />
 
-Add Task![Uploading Screenshot 2025-09-02 073435.png…]()
 <img width="1916" height="1048" alt="Screenshot 2025-09-02 073410" src="https://github.com/user-attachments/assets/ff71ded7-1d3a-4988-a618-d3e59855bd22" />
 
 
