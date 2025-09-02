@@ -16,9 +16,7 @@ api.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 // Handle token expiration
@@ -43,17 +41,18 @@ export const setAuthToken = (token) => {
   }
 };
 
+// Corrected API paths
 export const authAPI = {
-  login: (email, password) => api.post('/auth/login', { email, password }),
-  register: (username, email, password) => 
-    api.post('/auth/register', { username, email, password })
+  login: (email, password) => api.post('/api/auth/login', { email, password }),
+  register: (username, email, password) =>
+    api.post('/api/auth/register', { username, email, password })
 };
 
 export const tasksAPI = {
-  getTasks: () => api.get('/tasks'),
-  createTask: (taskData) => api.post('/tasks', taskData),
-  updateTask: (id, taskData) => api.put(`/tasks/${id}`, taskData),
-  deleteTask: (id) => api.delete(`/tasks/${id}`)
+  getTasks: () => api.get('/api/tasks'),
+  createTask: (taskData) => api.post('/api/tasks', taskData),
+  updateTask: (id, taskData) => api.put(`/api/tasks/${id}`, taskData),
+  deleteTask: (id) => api.delete(`/api/tasks/${id}`)
 };
 
 export default api;
